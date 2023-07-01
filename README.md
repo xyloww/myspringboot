@@ -1,4 +1,4 @@
-# learning points
+# Learning Points
 ## pom.xml
 ### groupId
 1. is like the city
