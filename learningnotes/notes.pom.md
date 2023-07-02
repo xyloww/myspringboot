@@ -14,7 +14,7 @@
 2. Specific version e.g. 1.0 2.1
 3. If the project is under active development, can use 1.0-SNAPSHOT
 
-### example 
+### example 1
   Saves time for developers, no need to list every single dependencies 
   
   		<dependency>
@@ -36,7 +36,33 @@ To package to executable jar/war files, can also easily run the app
 			</plugin>
 		</plugins>
 	</build>
-  
+
+
+
+
+
+  ### example 2
+Specify version of spring boot
+```
+	</project>
+	        <parent>
+	                <groupId>org.springframework.boot</groupId>
+	                <artifactId>spring-boot-starter-parent</artifactId>
+	                <version>2.5.2</version>
+	                <relativePath/>
+	        </parent>
+	        <dependencies>
+	                <!-- Spring Boot Starter Web dependency -->
+	                <dependency>
+	                        <groupId>org.springframework.boot</groupId>
+	                        <artifactId>spring-boot-starter-web</artifactId>  <--- inherit version from starter parent
+	                </dependency>
+	        </dependencies>
+	</project>
+```
+
+
+
 
 
 
